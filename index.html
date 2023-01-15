@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Midterm</title>
+<!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- CSS ONLY -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<style>
+    :root {
+        --primary-color: white;
+    }
+    body {
+        background-color: var(--primary-color);
+    }
+
+/* Navbar Section */
+    .header {
+        background-color: #669999;
+    }
+    .nav-item {
+        padding-right: 30px;
+    }
+    .navbar-brand {
+      padding-left: 30px;
+    }
+
+/* Hero Section */
+    .hero__title-1 {
+      padding-left: 30px;
+      font-size: small;
+    }
+    .hero__title-2 {
+      padding-right: 30px;
+      font-size: small;
+    }
+    .hero__title-3 {
+      padding-left: 50px;
+    }
+    .btn {
+    font-size: small;
+    }
+
+/* Cta Section */
+    .cta {
+        background-color: orange;
+    }
+
+    .form {
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+        padding-bottom: 50px;
+        margin: 0 10%;
+    }
+    .form-1 {
+        padding: 8px;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-left: 20px;
+    }
+
+/* Card Section */
+    .card {
+      background-color: white;
+      padding-bottom: 90px;
+      padding-top: 30px;
+    }
+    .stage-1 {
+        background-color: #cc6666;
+    }
+    .stage-2 {
+        background-color: orange;
+        padding-bottom: 35px;
+    }
+    .stage-3 {
+        background-color: #669999;
+        padding-bottom: 0px;
+    }
+
+/* About Section */
+    #about {
+        background-image: url(img/STAGES_Form_Image.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+    }
+    .about__title-1 {
+      padding-left: 30px;
+      font-size: small;
+    }
+    .about__title-2 {
+      padding-right: 30px;
+      font-size: small;
+    }
+    .about__title-3 {
+      padding-left: 50px;
+    }
+    .about__content {
+        margin-top: 50px;
+        margin-right: 70px;
+    }
+
+/* Feature Section */
+    .feature__title {
+      color: darkgreen;
+    }
+    .feature__content-1 {
+        margin-bottom: 129px;
+    }
+    .feature__content-2 {
+        margin-bottom: 62px;
+    }
+
+/* Cta 2 Section */
+    #Cta-2 {
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+    .cta-2__content {
+        display: flex;
+        justify-content: center;
+    }
+    .form-2 {
+        margin-left: 20px;
+    }
+
+/* Footer Section */
+    .footer__title-1 {
+      padding-left: 30px;
+      font-size: small;
+    }
+    .footer__title-2 {
+      padding-right: 30px;
+      font-size: small;
+    }
+
+</style>
+<body>
+<!-- Navbar Section -->
+<nav class="navbar navbar-expand-lg header">
+    <div class="container">
+      <div id="logo" class="header__block header__block--logo header__block--show header__switch-content stretch" rald-settings-id="sections_header_blogo_settings_stretch">
+        <style>
+        #logo {
+          line-height: 1;
+        }
+        #logo .logo__image {
+          display: block;
+          width: 200px;
+        }
+        #logo .logo__text {
+          color: gray;
+        }
+      </style>
+      
+      <a class="logo" href="#">
+          <img class="logo__image" src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/themes/2151345124/settings_images/i3U0qFjRKWy55l86Tg6u_STAGES_International_Logo_Beige_Horizontal.png" rald-settings-id="sections_header_blogo_settings_logo" alt="Header Logo">
+      </a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pt-3 pb-3">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Learn</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Connect</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Your Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a href=""><i class="fa-brands fa-facebook-f pt-2 text-white"></i></a>
+          </li>
+          <li class="nav-item">
+            <a href=""><i class="fa-brands fa-instagram pt-2 text-white"></i></a>
+          </li>
+          <li class="nav-item">
+            <a href=""><i class="fa-brands fa-linkedin-in pt-2 text-white"></i></a>
+          </li>
+          </ul>
+      </div>
+    </div>
+  </nav>
+<!-- Hero Section -->
+<section id="hero" class="plain-section">
+    <div class="container">
+        <div class="row d-flex align-items-center">
+            <div class="col-12 col-md-6">
+                <p class="hero__title-1 pt-3 text-dark">Stages International Was founded by Terri O'Fallon, PhD and Kim Barta, MA in 2015 to offer training and resources informed by the STAGES Model of Human development</p>
+            </div>
+            <div class="col-12 col-md-6">
+                <p class="hero__title-2 pt-3 text-end text-dark">608 NE Washington Lewiston, MT 59457</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="hero" class="colored-section bg-primary">
+    <div class="hero__image container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <img class="img-fluid hero__img" src="hero.png" alt="Hero Image">
+            </div>
+            <div class="hero__title-3 col-12 col-md-6 mt-5 text-white">
+                <h1 class="mt-5">Who Am I Now?</h1>
+                <p class="mb-3"><small>The old me can be confusing</small></p>
+                <p class="mb-4"><small>Learning About Developmental confusions can help us to discover a deeper identity-one that is wiser, more fulfilling and interconnection.</small></p>
+                <button class="btn btn-warning btn-sm text-white">DISCOVER YOUR DEEPER IDENTITY</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Cta Section -->
+<section class="form text-white cta">
+    <form>  
+      <h2 class="cta__title text-center">Join Our Mailing List</h2>
+      <p class="text-center"><small>Lorem ipsum dolor sit amet consectetur adipisicing elit.</small></p>
+      <div>
+      <input type="text" name="name" placeholder="Name" class="form-1">
+       <input type="text" name="email" placeholder="Email Address" class="form-1">
+       <button type="submit" class="form-1 bg-primary text-white">SUBCRIBE</button>
+      </div>
+    </form>
+</section>
+
+<!-- Card Section -->
+<section class="card">
+    <h1 class="text-center mb-5">What is STAGES?</h1>
+    <div class="profile-card text-center">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-4 md-6">
+                  <div class="card stage-1">
+                    <img src="card1.jpg"  alt="card-1">
+                    <div class="card-body">
+                      <h4 class="card-title text-white"><small>Life puts in front of us a primary<br>
+                        confusion that stops us in our tracks--</small></h4>
+                      <h5 class="card-text text-white"><small>Who have I been?<br>
+                        Who am I now?<br>
+                        Who am I becoming?</small></h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 md-6">
+                  <div class="card stage-2">
+                    <img src="card2.png" alt="card-2">
+                    <div class="card-body">
+                      <h4 class="card-title text-white"><small>These questions make us slow down<br>
+                        until we solve the developmental<br>
+                        confusions we are facing</small></h4>
+                      <h5 class="card-text text-white"><small>How can we get feedback on<br>
+                        our healthy contradictions,<br>
+                        and discover the new version<br>
+                        of who we are?</small></h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 md-6">
+                  <div class="card stage-3">
+                    <img src="card3.png" alt="card-3">
+                    <div class="card-body">
+                      <h5 class="card-title text-white"><small>STAGES Matrix is a tool that can guide
+                        us through this journey. It won't put us
+                        into a box that has ceilings or sides, for
+                        every person is ultimately a mystery. It
+                        doesn't send us up a one-way staircase.
+                        But it can give us a snapshot in time that
+                        will bring into the open our own new
+                        perspective-taking, the simple
+                        underpinnings of "Who We Are," and our
+                        developmental complexity.</small></h5>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-center mt-3">
+      <button class="btn btn-primary mt-4">DOWNLOAD THE STAGES ROADMAP</button>
+    </div>
+  </section>
+
+<!-- Feature Section -->
+<section id="feature">
+    <div class="container">
+        <p class="text-center mt-5">Begin your developmental journey</p>
+        <h1 class="text-center mb-5">STAGES Online Courses</h1>
+      <div class="row text-center">
+        <div class="feature-box col-lg-4">
+          <img src="Q1.png" width="200" height="200" alt="feature-1">
+          <h4 class="text-center pt-3 feature__title">The Three Questions</h4>
+          <p class="lead text-center"><small><b>Discovering Who you are</b></small></p>
+          <p class="text-center">To start on your development journey, we<br>
+            only have to respond to three questions so<br>
+            that we can discover and navigate these<br>
+            healthy confusions. Our first course will help<br>
+            you dive deeply into your present identity.<br>
+            However, we know that we constantly<br>
+            change, so we can continue to ask these<br>
+            three questions throughout our lives to<br>
+            discover who the "new me" is.</p>
+          <button class="btn btn-danger btn-lg">LEARN MORE</button>
+        </div>
+  
+        <div class="feature-box col-lg-4">
+          <img src="Q2.png" width="200" height="200" alt="feature-2">
+          <h4 class="text-center pt-3 feature__title">Developmental<br>Confussions</h4>
+          <p class="text-center feature__content-1">The second course in this series<br>
+            "Developmental Confusions" will describe the<br>
+            primary confusion at each development<br>
+            stage that we must solve in order to continue<br>
+            into our emerging identity.</p>
+          <button class="btn btn-warning btn-lg text-white">LEARN MORE</button>
+        </div>
+  
+        <div class="feature-box col-lg-4">
+          <img src="Q3.png" width="200" height="200" alt="feature-3">
+          <h4 class="text-center pt-3 feature__title">Mind's I</h4>
+          <p class="lead text-center"><small><b>12 Month Developmental Journey</b></small></p>
+          <p class="text-center feature__content-2">The third course in this series "The<br>
+            Mind's I" will lead us through the journey<br>
+            of our life's path in practical ways. It<br>
+            combines the past, present, and future<br>
+            identities we navigate through and<br>
+            confronts the healthy confusion we meet<br>
+            and overcome at each stage.</p>
+          <button class="btn btn-primary mb-5 btn-lg">LEARN MORE</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- About Section -->
+<section class="bg-danger text-center mt-5 text-white">
+    <div class="container">
+        <h4 class="text-center pt-5">Get Connected to a Stage Coach</h4>
+        <p class="mb-4"><small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac pharetra sapien, at tempus eros.<br>
+            Nulla cursus scelerisque semper. Integer commodo nibh elit, non lobortis nulla sollicitudin eu.<br>
+            </small></p>
+        <button class="btn btn-warning mb-5 btn-lg text-white">CONNECT NOW</button>
+      </div>
+    </div>
+</section>
+  
+<section id="about">
+  
+    <div class="about__image container d-flex justify-content-end">
+      <style>
+        #about {
+        background-image: url(https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/themes/2151345124/settings_images/8VJ8ZzSJQL37rjBLmSWZ_AdobeStock_340757286.png);
+        background-position: center;
+      }
+  
+        #about .section__overlay {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          left: 0;
+          top: 0;
+          background-color: rgba(0, 0, 0, 0);
+      }
+        #about .sizer {
+          padding-top: 40px;
+          padding-bottom: 40px;
+      }
+        #about .container {
+          max-width: calc(1260px + 10px + 10px);
+          padding-right: 10px;
+          padding-left: 10px;
+    
+      }
+        #about .container--full {
+          width: 100%;
+          max-width: calc(100% + 10px + 10px);
+  }
+        @media (min-width: 768px) {
+    
+        #about .sizer {
+          padding-top: 80px;
+          padding-bottom: 80px;
+      }
+        #about .container {
+          max-width: calc(1260px + 40px + 40px);
+          padding-right: 40px;
+          padding-left: 40px;
+      }
+        #about .container--full {
+          max-width: calc(100% + 40px + 40px);
+      }
+    }
+  
+  
+</style>
+      
+        <div class="about__content">
+          
+            <div class="about__title-3 text-white">
+              
+                <h1 class="mt-5">STAGES Assessments</h1>
+                <p class="mb-4"><small>here is power in perspective. Our scientifically backed<br>
+                    assessments are now available with courses so you can learn your<br>
+                    developmental level & unlock your full potential. Assessments are<br>
+                    at the heart of STAES. Take your assessment and get connected<br>
+                    with a trained professional scorer.</small></p>
+                <button class="btn btn-warning btn-sm text-white">LEARN ABOUT STAGES ASSESSMENTS</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Cta 2 Section -->
+<section id="Cta-2">
+  <style>
+  
+  #section-cta-2 .section__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+  }
+  #section-cta-2 .sizer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  #section-cta-2 .container {
+    max-width: calc(1260px + 10px + 10px);
+    padding-right: 10px;
+    padding-left: 10px;
+    
+  }
+  #section-cta-2 .container--full {
+    width: 100%;
+    max-width: calc(100% + 10px + 10px);
+  }
+  @media (min-width: 768px) {
+    
+    #section-cta-2 .sizer {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+    #section-cta-2 .container {
+      max-width: calc(1260px + 40px + 40px);
+      padding-right: 40px;
+      padding-left: 40px;
+    }
+    #section-cta-2 .container--full {
+      max-width: calc(100% + 40px + 40px);
+    }
+  }
+  
+  
+</style>
+  <div class="sizer">
+    <div class="section__overlay"></div>
+    <div class="container ">
+      <div class="row align-items-center justify-content-center text-white">
+        <style>
+          /* margin settings */
+          #block-get-in-touch-0, [data-slick-id="get-in-touch-0"] {
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+          }
+          #block-get-in-touch-0 .block, [data-slick-id="get-in-touch-0"] .block {
+            /* border settings */
+            border: 0px  black;
+            border-radius: 0px;
+            /* background color */
+              background-color: blue;
+            /* default padding for mobile */
+              padding: 20px;
+              padding: 20px;
+                padding: 20px;
+            /* mobile padding overrides */
+              padding-top: 40px;
+          }
+        
+          @media (min-width: 768px) {
+            /* desktop margin settings */
+            #block-get-in-touch-0, [data-slick-id="get-in-touch-0"] {
+              margin-top: 0px;
+              margin-right: -140px;
+              margin-bottom: 0px;
+              margin-left: 0px;
+            }
+            #block-get-in-touch-0 .block, [data-slick-id="get-in-touch-0"] .block {
+              /* default padding for desktop  */
+                padding: 30px;
+                  padding: 30px;
+              /* desktop padding overrides */
+                padding-top: 0px;
+                padding-right: 0px;
+                padding-left: 0px;
+            }
+          }
+          /* mobile text align */
+          @media (max-width: 767px) {
+            #block-get-in-touch-0, [data-slick-id="get-in-touch-0"] {
+              text-align: left;
+            }
+          }
+        </style>
+        <div id="block-get-in-touch-0" class="block-type--text text-center col-4 hidden--mobile" data-reveal-event="" data-reveal-offset="" data-reveal-units="seconds" rald-settings-id="sections_get-in-touch-blocks_get-in-touch-0_settings_width">
+        </div>
+        <style>
+          /* margin settings */
+          #block-get-in-touch-3, [data-slick-id="get-in-touch-3"] {
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+          }
+          #block-get-in-touch-3 .block, [data-slick-id="get-in-touch-3"] .block {
+            /* border settings */
+            border: 0px  black;
+            border-radius: 0px;
+            /* background color */
+              background-color: blue;
+            /* default padding for mobile */
+              padding: 20px;
+              padding: 20px;
+                padding: 20px;
+            /* mobile padding overrides */
+              padding-top: 0px;
+          }
+        
+          @media (min-width: 768px) {
+            /* desktop margin settings */
+            #block-get-in-touch-3, [data-slick-id="get-in-touch-3"] {
+              margin-top: 0px;
+              margin-right: -140px;
+              margin-bottom: 0px;
+              margin-left: 0px;
+            }
+            #block-get-in-touch-3 .block, [data-slick-id="get-in-touch-3"] .block {
+              /* default padding for desktop  */
+                padding: 30px;
+                  padding: 30px;
+              /* desktop padding overrides */
+                padding-top: 0px;
+                padding-right: 0px;
+                padding-left: 0px;
+            }
+          }
+          /* mobile text align */
+          @media (max-width: 767px) {
+            #block-get-in-touch-3, [data-slick-id="get-in-touch-3"] {
+              text-align: center;
+            }
+          }
+        </style>
+        <div id="block-get-in-touch-3" class="block-type--text text-center col-4 hidden--desktop" data-reveal-event="" data-reveal-offset="" data-reveal-units="seconds" rald-settings-id="sections_get-in-touch-blocks_get-in-touch-3_settings_width">
+          <div class="block box-shadow- background-dark aos-init aos-animate" data-aos="none" data-aos-delay="0" data-aos-duration="0">
+            
+            <style>
+          
+          #block-get-in-touch-0 .btn {
+            margin-top: 1rem;
+          }
+        </style>
+        
+        <div style="background: orange; padding: 0 0 15px 0;">&nbsp;
+        <h4>Get in Touch</h4>
+        </div>
+        <p>&nbsp;</p>
+        <p><strong>Reach out and say Hello!</strong><br><strong> We'd love to hear from you.</strong></p>
+        <p>&nbsp;</p>
+        <p>Email us at:<br> Support@stagesinternational.com</p>
+        
+          </div>
+        </div>
+        <style>
+          /* margin settings */
+          #block-get-in-touch-2, [data-slick-id="get-in-touch-2"] {
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+          }
+          #block-get-in-touch-2 .block, [data-slick-id="get-in-touch-2"] .block {
+            /* border settings */
+            border: 0px none black;
+            border-radius: 0px;
+            /* background color */
+              background-color: #eeeeee;
+            /* default padding for mobile */
+              padding: 20px;
+              padding: 20px;
+            /* mobile padding overrides */
+              padding-top: 0px;
+              padding-right: 0px;
+              padding-bottom: 0px;
+              padding-left: 0px;
+          }
+        
+          @media (min-width: 768px) {
+            /* desktop margin settings */
+            #block-get-in-touch-2, [data-slick-id="get-in-touch-2"] {
+              margin-top: 0px;
+              margin-right: 0px;
+              margin-bottom: 0px;
+              margin-left: 0px;
+            }
+            #block-get-in-touch-2 .block, [data-slick-id="get-in-touch-2"] .block {
+              /* default padding for desktop  */
+                padding: 30px;
+                padding: 30px;
+              /* desktop padding overrides */
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 50px;
+                padding-left: 150px;
+              
+            }
+          }
+          /* mobile text align */
+          @media (max-width: 767px) {
+            #block-get-in-touch-2, [data-slick-id="get-in-touch-2"] {
+              text-align: center;
+            }
+          }
+        </style>
+
+        <div id="block-get-in-touch-2" class="block-type--form text-center col-9 hidden--mobile" data-reveal-event="" data-reveal-offset="" data-reveal-units="seconds" rald-settings-id="sections_get-in-touch-blocks_get-in-touch-2_settings_width">
+        <div class="block box-shadow-medium background-light aos-init aos-animate" data-aos="none" data-aos-delay="0" data-aos-duration="0">
+        <style>
+          #block-get-in-touch-2 .form-btn {
+            border-color: orange;
+            border-radius: 0px;
+            background: orange;
+            color: white;
+          }
+          #block-get-in-touch-2 .btn--outline {
+            color: orange;
+            background: transparent;
+          }
+          #block-get-in-touch-2 .disclaimer-text {
+            font-size: 16px;
+            margin-top: 1.25rem;
+            margin-bottom: 0;
+            color: lightgray;
+          }
+        </style>
+        <div class="form">
+          <div rald-settings-id="sections_get-in-touch-blocks_get-in-touch-2_settings_text"></div>
+          
+            <form data-parsley-validate="true" data-rald-disable-on-submit="true" action="https://www.virtualfreedomacademy.co.uk/forms/2147798495/form_submissions" accept-charset="UTF-8" method="post" novalidate=""><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="CHizHRZUoVjRUVfd8/ElUNiOA5IXCfF8n1R9b9GdgybTSO6dEdS0z6mzu+KorZQ/FVbnY2D7LEJuzrhpsSW9Cw=="><input type="text" name="website_url" autofill="off" placeholder="Skip this field" style="display: none;" data-parsley-id="6032"><ul class="parsley-errors-list" id="parsley-id-6032"></ul><input type="hidden" name="rald_fk_checksum" autofill="off" value=""><input type="hidden" name="form_submission[landing_page_id]" value="2148690649" autofill="off">
+              <div class="">
+                <input type="hidden" name="thank_you_url" value="">
+                
+                  <div class="text-field form-group"><input type="text" name="form_submission[name]" id="form_submission_name" value="" required="required" class="form-control" placeholder="Name" data-parsley-id="4175"><ul class="parsley-errors-list" id="parsley-id-4175"></ul></div>
+                
+                  <div class="email-field form-group"><input required="required" class="form-control" placeholder="Email Address" data-parsley-remote="true" data-parsley-remote-validator="rald_email_validator" type="email" name="form_submission[email]" id="form_submission_email" data-parsley-id="7516"><ul class="parsley-errors-list" id="parsley-id-7516"></ul></div>
+                
+                  <div class="text-area-field form-group"><textarea name="form_submission[custom_8]" id="form_submission_custom_8" required="required" class="form-control" placeholder="Write your message here..." data-parsley-id="4752"></textarea><ul class="parsley-errors-list" id="parsley-id-4752"></ul></div>
+                
+                <div>
+                  
+                  <button id="form-button" class="form-btn btn--solid btn--auto btn--small" type="submit" rald-settings-id="sections_get-in-touch-blocks_get-in-touch-2_settings_btn_text" role="button">
+                    <span class="git">SEND</span>
+                  </button>
+                </div>
+              </div>
+            </form>
+        </div>
+          </div>
+        </div>
+        <style>
+          #block-get-in-touch, [data-slick-id="get-in-touch"] {
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+          }
+          #block-get-in-touch .block, [data-slick-id="get-in-touch"] .block {
+            /* border settings */
+            border: 0px none black;
+            border-radius: 0px;
+            /* background color */
+              background-color: #eeeeee;
+            /* default padding for mobile */
+              padding: 20px;
+              padding: 20px;
+            /* mobile padding overrides */
+              padding-top: 0px;
+              padding-right: 0px;
+              padding-bottom: 20px;
+              padding-left: 0px;
+          }
+          @media (min-width: 768px) {
+            /* desktop margin settings */
+            #block-get-in-touch, [data-slick-id="get-in-touch"] {
+              margin-top: 0px;
+              margin-right: 0px;
+              margin-bottom: 0px;
+              margin-left: 0px;
+            }
+            #block-get-in-touch .block, [data-slick-id="get-in-touch"] .block {
+              /* default padding for desktop  */
+              
+                padding: 30px;
+                padding: 30px;
+              /* desktop padding overrides */
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 50px;
+                padding-left: 150px;
+              
+            }
+          }
+          /* mobile text align */
+          @media (max-width: 767px) {
+            #block-get-in-touch, [data-slick-id="get-in-touch"] {
+              text-align: center;
+            }
+          }
+        </style>
+        
+        
+        
+<div id="block-get-in-touch" class="block-type--form text-center col-9 hidden--desktop " data-reveal-event="" data-reveal-offset="" data-reveal-units="seconds" rald-settings-id="sections_get-in-touch-blocks_get-in-touch_settings_width">
+<div class="block box-shadow-medium background-light aos-init aos-animate" data-aos="none" data-aos-delay="0" data-aos-duration="0">
+          
+        <style>
+          #block-get-in-touch .form-btn {
+            border-color: orange;
+            border-radius: 0px;
+            background: orange;
+            color: white;
+          }
+          #block-get-in-touch .btn--outline {
+            color: orange;
+            background: transparent;
+          }
+          #block-get-in-touch .disclaimer-text {
+            font-size: 16px;
+            margin-top: 1.25rem;
+            margin-bottom: 0;
+            color: lightgray;
+          }
+        </style>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer Section -->
+<section id="footer" class="bg-primary">
+    <div class="container">
+        <div class="row d-flex align-items-center text-white">
+            <div class="col-12 col-md-6">
+                <p class="footer__title-1 pt-3"><small>@2021 STAGES International. All rights reserved, Copyrights STAGES International LCC | (406) 272-6238</small></p>
+            </div>
+            <div class="col-12 col-md-6">
+                <p class="footer__title-2 pt-3 text-end">Privacy | Terms and Conditions</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- JAVASCRIPT ONLY -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
